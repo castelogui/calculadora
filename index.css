@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.button {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    font-family: monospace;
+    margin: 2%;
+    padding: 5;
+    background: rgba(66, 29, 73, 0.533);
+    border-radius: 10%;
+    border: none;
+    color: white;
+}
+.textview {
+    width: 280px;
+    margin: 5px;
+    font-size: 35px;
+    padding: 10px;
+    border: #e91e63;
+    color: rgba(66, 29, 73, 0.533);;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+.bg{
+    background: linear-gradient(to right, #e91e63, #3f51b5);
+    height: 100%;
+}
