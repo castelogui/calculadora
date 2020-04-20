@@ -7,20 +7,43 @@
     height: 70px;
     font-size: 35px;
     font-family: monospace;
-    margin: 2%;
-    padding: 5;
+    margin: 2px;
+    padding: 6px;
     background: rgba(66, 29, 73, 0.533);
     border-radius: 10%;
     border: none;
     color: white;
 }
+.button:hover {
+    color: white;
+    background: rgba(95, 53, 104, 0.533);
+}
+#clean, #back {
+    background-color: rgba(33, 180, 185, 0.863);
+}
+#clean:hover, #back:hover {
+    background-color: rgba(34, 129, 133, 0.863);
+}
 .textview {
-    width: 280px;
-    margin: 5px;
-    font-size: 35px;
+    width: 360px;
+    font-size: 45px;
+    text-align: end;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
-    border: #e91e63;
-    color: rgba(66, 29, 73, 0.533);;
+    border: none;
+    color: black;
+}
+.preview {
+    width: 330px;
+    text-align: end;
+    background-color: transparent;
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    border: none;
+    color: rgba(66, 29, 73, 0.533);
 }
 .main{
     position: absolute;
