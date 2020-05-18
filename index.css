@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 .button {
     width: 70px;
     height: 70px;
@@ -11,47 +12,76 @@
     padding: 6px;
     background: rgba(66, 29, 73, 0.533);
     border-radius: 10%;
-    border: none;
     color: white;
+    cursor: pointer;
 }
 .button:hover {
     color: white;
     background: rgba(95, 53, 104, 0.533);
+    transform: translateY(1px);
 }
 #clean, #back {
-    background-color: rgba(33, 180, 185, 0.863);
+    background-color: rgba(255, 27, 27, 0.863);
 }
 #clean:hover, #back:hover {
-    background-color: rgba(34, 129, 133, 0.863);
+    background-color: rgba(202, 68, 68, 0.863);
 }
-.textview {
+.form-input1, .form-input2{
+    background-color: rgb(44, 46, 59);
+    width: 360px;
+    height: 75px;
+    margin: 3px;
+    left: -4px;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.form-input2{
+    height: 40px;
+}
+.textview, .preview {
     width: 360px;
     font-size: 45px;
+    top: 10px;
     text-align: end;
-    background-color: transparent;
+    border-radius: 3px;
+    position: relative;
+    background-color: rgb(153, 149, 149);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    border: none;
     color: black;
 }
 .preview {
-    width: 330px;
-    text-align: end;
-    background-color: transparent;
-    margin: 5px;
+    top: 2px;
+    position: relative;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0px;
-    border: none;
     color: rgba(66, 29, 73, 0.533);
-}
-.main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%)translateY(-50%);
 }
 .bg{
     background: linear-gradient(to right, #e91e63, #3f51b5);
     height: 100%;
+}
+.container-border{
+    background-color: rgb(44, 46, 59);
+    top: 5%;
+    left: 33%;
+    width: 450px;
+    height: 600px;
+    padding: 5px;
+    position: relative;
+    border-radius: 10%;
+}
+.container{
+    background-color: rgb(54, 89, 119);
+    width: 450px;
+    height: 600px;
+    border-color: black;
+    border-radius: 10%;
+    position: relative;
+
+}
+.main{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
 }

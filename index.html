@@ -3,47 +3,56 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="bg"></div>
-        <div class="main">
-            <form name="form">
-                <input class="textview" name="textview">
-                <input class="preview" name="preview">
-            </form>
-            <table onclick="preview()">
-                <tr>
-                    <td><input class="button" type="button" id="clean" value="C" onclick="clean()"></td>
-                    <td><input class="button" type="button" id="back" value="<" onclick="back()"></td>
-                    <td><input class="button" type="button" value="^" onclick="insert('^')"></td>
-                    <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
-                    <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
-                </tr>
-                <tr>
-                    <td><input class="button" type="button" value="(" onclick="insert('(')"></td>
-                    <td><input class="button" type="button" value="7" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="8" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="9" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
-                </tr>
-                <tr>
-                    <td><input class="button" type="button" value=")" onclick="insert(')')"></td>
-                    <td><input class="button" type="button" value="4" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="5" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="6" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
-                </tr>
-                <tr>
-                    <td><input class="button" type="button" value="%" onclick="insert('%')"></td>
-                    <td><input class="button" type="button" value="1" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="2" onclick="insert(value)"></td>
-                    <td><input class="button" type="button" value="3" onclick="insert(value)"></td>
-                    <td rowspan=5><input class="button" style="height: 148;" type="button" value="=" onclick="equal()"></td>
-                </tr>
-                <tr>
-                    <td><input class="button" type="button" value="PI" onclick="insert(3.141592653589)"></td>
-                    <td colspan=2><input class="button" style="width: 135;" type="button" value="0" onclick="insert(0)"></td>
-                    <td><input class="button" type="button" value="." onclick="insert('.')"></td>
-                </tr>
-            </table>
+        <div class="bg">
+            <div class="container-border">
+                <div class="container">
+                    <div class="main">
+                        <form class="form" name="form">
+                            <div class="form-input1">
+                                <input class="textview" name="textview">
+                            </div>
+                            <div class="form-input2">
+                                <input class="preview" name="preview">
+                            </div>
+                        </form>
+                        <table onclick="preview()">
+                            <tr>
+                                <td><input class="button" type="button" id="clean" value="C" onclick="clean()"></td>
+                                <td><input class="button" type="button" id="back" value="<" onclick="back()"></td>
+                                <td><input class="button" type="button" value="^" onclick="insert('^')"></td>
+                                <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+                                <td><input class="button" type="button" value="x" onclick="insert('*')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="button" type="button" value="(" onclick="insert('(')"></td>
+                                <td><input class="button" type="button" value="7" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="8" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="9" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="button" type="button" value=")" onclick="insert(')')"></td>
+                                <td><input class="button" type="button" value="4" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="5" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="6" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="button" type="button" value="%" onclick="insert('%')"></td>
+                                <td><input class="button" type="button" value="1" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="2" onclick="insert(value)"></td>
+                                <td><input class="button" type="button" value="3" onclick="insert(value)"></td>
+                                <td rowspan=5><input class="button" style="height: 148;" type="button" value="=" onclick="equal()"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="button" type="button" value="PI" onclick="insert(3.141592653589)"></td>
+                                <td colspan=2><input class="button" style="width: 135;" type="button" value="0" onclick="insert(0)"></td>
+                                <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="index.js"></script>
